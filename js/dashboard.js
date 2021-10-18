@@ -28,7 +28,7 @@ function loadDataUser() {
     $('#profile_name').html(childData.nombres);
     console.log(childData.nombres);
     if (childData.sexo === 'Masculino') {
-      $('#img_profile').attr('src', './../image/avatar_man.png');
+      $('#img_profile').attr('src', './image/avatar_man.png');
     } else {
       $('#img_profile').attr('src', './../image/avatar_women.png');
     }
