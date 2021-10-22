@@ -18,7 +18,6 @@ function loadIncidents() {
   console.log(alerts);
   let index = 0;
   let ind = 0;
-  let datos = {};
   firebase
     .auth()
     .signInWithEmailAndPassword(user, key)
@@ -35,24 +34,19 @@ function loadIncidents() {
       // Signed in
       // var user = userCredential.user;
       // ...
-      var starCountRef = dbref.ref().child('incidentes');
 
+      var starCountRef = dbref.ref().child('incidentes');
       starCountRef.on('value', snapshot => {
         document.getElementById('alerts__list').innerHTML = '';
-
         snapshot.forEach(function (childSnapshot) {
           index++;
           var childData = childSnapshot.val();
-          datos = childSnapshot.val();
-          console.log('data', datos);
-          ind++;
-          // console.log('data', childData);
+          console.log('data', childData);
           // console.log(arreglo.sort);
           showList(childData, index);
           cont++; //contador de incidencias
           // primercont[index] = cont;
         });
-        // console.log(`probando array : ${('data', datos{2})}`);
         console.log(`El contador actual es de: ${cont}`);
         contActual = cont;
 
