@@ -46,49 +46,50 @@ class Util {
   }
 
   formatearFecha(texto) {
-    return texto.replace(/^(\d{4})-(\d{2})-(\d{2})$/g, '$3/$2/$1');
+    return texto.replace(/^(\d{4})-(\d{2})-(\d{2})$/g, "$3/$2/$1");  
   }
 
   nombreMes(numeroMes) {
-    let mes = '';
+    let mes = ""
     switch (numeroMes) {
-      case '01':
-        mes = 'Enero';
+      case "01":
+        mes = "Enero";
         break;
-      case '02':
-        mes = 'Febrero';
+      case "02":
+        mes = "Febrero";
         break;
-      case '03':
-        mes = 'Marzo';
+      case "03":
+        mes = "Marzo";
         break;
-      case '04':
-        mes = 'Abril';
+      case "04":
+        mes = "Abril";
         break;
-      case '05':
-        mes = 'Mayo';
+      case "05":
+        mes = "Mayo";
         break;
-      case '06':
-        mes = 'Junio';
+      case "06":
+        mes = "Junio";
         break;
-      case '07':
-        mes = 'Julio';
+      case "07":
+        mes = "Julio";
         break;
-      case '08':
-        mes = 'Agosto';
+      case "08":
+        mes = "Agosto";
         break;
-      case '09':
-        mes = 'Setiembre';
+      case "09":
+        mes = "Setiembre";
         break;
-      case '10':
-        mes = 'Octubre';
+      case "10":
+        mes = "Octubre";
         break;
-      case '11':
-        mes = 'Noviembre';
+      case "11":
+        mes = "Noviembre";
         break;
-      case '12':
-        mes = 'Diciembre';
+      case "12":
+        mes = "Diciembre";
         break;
     }
-    return mes;
+    return mes
   }
+
 }
