@@ -90,7 +90,7 @@
                     id="dni"
                     type="text"
                     class="form-control"
-                    onkeypress="return isNumeric(event)"
+                    onkeypress="isNumeric(event)"
                     oninput="maxLengthCheck(this)"
                     min="1"
                     max="99999999"
@@ -141,7 +141,7 @@
                     maxlength="9"
                     type="text"
                     class="form-control"
-                    onkeypress="return isNumeric(event)"
+                    onkeypress="isNumeric(event)"
                     required
                   />
                 </div>
@@ -176,8 +176,8 @@
                   <label for="tipo-usuario">Tipo de Usuario</label>
                   <br />
                   <select name="tipo-usuario" id="tipo-usuario">
-                    <option value="1">Agente serenazgo</option>
-                    <option value="2" selected>Ciudadano</option>
+                    <option value="2">Agente serenazgo</option>
+                    <option value="1" selected>Ciudadano</option>
                   </select>
                 </div>
               </div>
