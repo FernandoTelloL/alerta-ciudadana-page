@@ -142,7 +142,7 @@ $(document).ready(function () {
     });
   coleccionUsuarios.on('child_added', e => {
     let a;
-    (a = '1' === e.child('tipoacceso').val() ? 'Serenazgo' : 'Ciudadano'),
+    (a = '1' === e.child('tipoacceso').val() ? 'Ciudadano' : 'Serenazgo'),
       (o = [
         e.key,
         e.child('numerodocumento').val(),
